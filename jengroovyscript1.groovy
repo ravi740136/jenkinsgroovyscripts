@@ -8,6 +8,7 @@ pipeline {
 			steps {
 				echo 'Hello world!'
 				echo 'i am ravi'
+				echo 'iam sonika'
 			}
 		}
 	}
