@@ -1,14 +1,27 @@
 
 
 
-node {
+pipeline {
 	agent any
 	stages {
-		stage('Stage 1') {
+		stage('build') {
 			steps {
-				echo 'Hello world!'
-				echo 'i am ravi'
-				echo 'iam sonika'
+				echo 'building code'
+				
+			}
+		}
+		
+		stage('test') {
+			steps {
+				echo 'testing code'
+				
+			}
+		}
+		
+		stage('deploy') {
+			steps {
+				echo 'deploying code'
+				
 			}
 		}
 	}
